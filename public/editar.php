@@ -7,7 +7,7 @@ include("../infra/db/connect.php");
 $id = $_GET["id"];
 
 $sql = "SELECT * FROM usuarios WHERE id = $id";
-$resultado = $conn -> query($sql);
+include("../infra/db/resultado_query.php");
 $usuario = $resultado -> fetch_assoc();
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
