@@ -11,16 +11,12 @@ include("../infra/db/resultado_query.php");
 $usuario = $resultado -> fetch_assoc();
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    $novoUsuario = $_POST["usuario"];
-    $novaSenha = $_POST["senha"];
+    include("../infra/db/novo_variaveis.php");
+
 
     $sqlUpdate = " UPDATE usuarios SET usuario = '$novoUsuario', senha = '$novaSenha' WHERE id = $id";
 
-    if($conn -> query($sqlUpdate) === TRUE){
-        header("Location: home.php");
-        exit();
-    }
-
+    include("../infra/db/condicao_true_query.php");
 
 }
 

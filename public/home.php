@@ -4,8 +4,7 @@ include("../infra/db/sessao_start.php");
 include("../infra/db/connect.php");
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    $novoUsuario = $_POST['usuario'];
-    $novaSenha = $_POST['senha'];
+    include("../infra/db/novo_variaveis.php");
 
     $sql = "INSERT INTO usuarios (usuario,senha) 
     VALUES ('$novoUsuario','$novaSenha')";  
