@@ -42,10 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <br>
         <?php
 
-        if (isset($erro)) {
-            echo $erro;
-        }
-        ;
+       include("../infra/db/erro.php");
 
         // esse erro serve ara alguma coisa
         
