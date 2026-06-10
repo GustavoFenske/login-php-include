@@ -5,7 +5,7 @@ include("../infra/db/sessao_start.php");
 
 include("../infra/db/connect.php");
 
-$id = $_GET["id"];
+include("../infra/db/get_id.php");
 
 $sql = " DELETE FROM usuarios WHERE id = $id ";
 

@@ -1,21 +1,17 @@
 <?php
 
 include("../infra/db/sessao_start.php");
-
 include("../infra/db/connect.php");
-
-$id = $_GET["id"];
+include("../infra/db/get_id.php");
 
 $sql = "SELECT * FROM usuarios WHERE id = $id";
 include("../infra/db/resultado_query.php");
 $usuario = $resultado -> fetch_assoc();
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
+    
     include("../infra/db/novo_variaveis.php");
-
-
     $sqlUpdate = " UPDATE usuarios SET usuario = '$novoUsuario', senha = '$novaSenha' WHERE id = $id";
-
     include("../infra/db/condicao_true_query.php");
 
 }
