@@ -1,23 +1,26 @@
-# Atividade-CRUD-01
+# 🔐 Login com PHP e Include
 
-# [Pagina de login integrado com banco de dados]
+Sistema de login desenvolvido utilizando PHP, com organização do código em diferentes arquivos e diretórios.
 
+## 📌 Sobre o projeto
 
-## Objetivo da Aplicação
-*  Essa pagina simples tem como objetivo nos aprofundarmos melhor no php, Xamp e back-end.
+O projeto é uma evolução de uma página de login desenvolvida anteriormente. Nesta versão, comandos e funcionalidades foram separados em diferentes arquivos e reutilizados utilizando `include`.
 
----
+## 🛠️ Tecnologias
 
-## Tecnologias Utilizadas
+- PHP
+- MySQL
+- HTML
+- CSS
 
-Como dito anteriormente, utilizamos o aplicativo XAMPP, em especifico o apache e o mysql.
+## 🎯 Objetivo
 
-## Funcionamente do código
+Praticar organização de código em PHP e compreender a utilização do `include` para reutilização de arquivos e funcionalidades.
 
-O codigo foca mais em suas validações e funcionalidades ao inves da aparencia, em resumo grande parte da ação se baseia em pegar as requisições do usuario na tentativa de login ou cadastro e validar.
+## 🚀 Como executar
 
----
+O projeto pode ser executado utilizando XAMPP, com Apache e MySQL ativos.
 
-## Principais aprendizados obtidos durante a análise
+## 👨‍💻 Autor
 
-Com a analise feita, foi possivel aprimorar a logica de programação, já que olhando para uma linha eu sabia dizer oque ela fazia. E como habilidades adquiridas, foi iniciado o conhecimento em back-end e integração de banco de dados para sites futuros, por exemplo o trabalho de SA
+Gustavo Fenske
